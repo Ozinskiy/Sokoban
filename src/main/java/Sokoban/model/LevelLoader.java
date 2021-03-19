@@ -59,10 +59,10 @@ public class LevelLoader {
                             switch (c) {
                                 case 'X' -> walls.add(new Wall(x, y));
                                 case '*' -> boxes.add(new Box(x, y));
-                                case '.' -> homes.add(new Home(x - 5, y - 5));
+                                case '.' -> homes.add(new Home(x, y));
                                 case '&' -> {
                                     boxes.add(new Box(x, y));
-                                    homes.add(new Home(x - 5, y - 5));
+                                    homes.add(new Home(x, y));
                                 }
                                 case '@' -> player = new Player(x, y);
                             }
